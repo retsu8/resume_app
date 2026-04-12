@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import 'bootstrap/dist/css/bootstrap.min.css';
 
 :root {
   --background: #ffffff;
@@ -24,20 +23,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  padding-top: 90px;
-}
-
-@media (min-width: 768px) {
-  body {
-    padding-top: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    margin-left: 232px;
-  }
 }
