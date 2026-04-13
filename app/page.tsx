@@ -65,13 +65,47 @@ Senior Software Engineer with over 6 years of experience in back-end and full-st
               <hr />
             </Row>
             <Row>
-              <h5>Oracle</h5>
+              <Col>
+                <b>Oracle</b>
+                <p>Senior Technical Support Engineer</p>
+              </Col>
+              <Col>
+                <Row style={{textAlign: "right"}}><b>Dec 2019 - April 2026</b></Row>
+                <Row style={{textAlign: "right"}}>Bozeman, MT</Row>
+              </Col>
             </Row>
             <Row>
-              <p>Senior Technical Support Engineer</p>
-            </Row>
-            <Row>
+              <Col sm={.5}></Col>
+              <Col>
               <WorkList data={data.work.Oracle} />
+              </Col>
+              <Col sm={1}></Col>
+            </Row>
+            <Row>
+              <h5>Vault Innovation Group</h5>
+            </Row>
+            <Row>
+              <p>Full Stack Engineer</p>
+            </Row>
+            <Row>
+              <Col sm={.5}></Col>
+              <Col>
+              <WorkList data={data.work['Vault Innovation Group']} />
+              </Col>
+              <Col sm={1}></Col>
+            </Row>
+            <Row>
+              <h5>Frontline Processing</h5>
+            </Row>
+            <Row>
+              <p>Lead Developer</p>
+            </Row>
+            <Row>
+              <Col sm={.5}></Col>
+              <Col>
+                <WorkList data={data.work['Frontline Processing']} />
+              </Col>
+              <Col sm={1}></Col>
             </Row>
         </Container>
     </>
