@@ -1,4 +1,4 @@
-export default function WorkList({data}) {
+export default function WorkList({data}: dict) {
 	let results = [];
 	data.forEach((item, index) => {
 	    results.push(
