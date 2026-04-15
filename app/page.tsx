@@ -12,6 +12,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import About from "./pages/about";
 import SkillList from "./pages/skilllist";
 import WorkList from "./pages/worklist";
+import {Header} from "./pages/header";
 import data from "./db/database.json";
 
 const skills = data["skills"]
@@ -19,6 +20,7 @@ const skills = data["skills"]
 export default function Home() {
   return (
     <>
+    <Header key="header" />
     <ThemeProvider
         breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
         minBreakpoint="xxs">

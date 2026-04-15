@@ -11,7 +11,7 @@ import {
   MDBBtn
 } from 'mdb-react-ui-kit';
 
-export default function header() {
+export default function Header() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
