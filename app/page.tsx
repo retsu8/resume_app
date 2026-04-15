@@ -8,11 +8,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import ListGroup from 'react-bootstrap/ListGroup';
 import About from "./pages/about";
 import SkillList from "./pages/skilllist";
 import WorkList from "./pages/worklist";
-import {Header} from "./pages/header";
+import Header from "./pages/header";
 import data from "./db/database.json";
 
 const skills = data["skills"]
@@ -25,6 +24,7 @@ export default function Home() {
         breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
         minBreakpoint="xxs">
         <Container>
+          <br />
             <Row>
               <h1 className="text-info">William Paddock</h1>
             </Row>
@@ -53,14 +53,14 @@ Senior Software Engineer with over 9 years of experience in back-end and full-st
               <hr />
             </Row>
             <Row>
-              <SkillList key="Skills" data={skills}/>
+              <SkillList id="skills" key="Skills" data={skills}/>
             </Row>
             <Row>
             <br />
             </Row>
             <Row>
               <Col>
-                <h2 className="text-info">Work Experience</h2>
+                <h2 id="experience" className="text-info">Work Experience</h2>
               </Col>
             </Row>
             <Row>
