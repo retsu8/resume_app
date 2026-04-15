@@ -7,25 +7,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { Email, Phone } from "hidden-from-bots-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ListGroup from 'react-bootstrap/ListGroup';
 import About from "./pages/about";
 import SkillList from "./pages/skilllist";
 import WorkList from "./pages/worklist";
 import data from "./db/database.json";
-
-export type Root<T> = {
-  work: {
-    Oracle: Array<string>
-    "Vault Innovation Group": Array<string>
-    "Frontline Processing": Array<string>
-  }
-  skills: Array<{
-    type: string
-    value: string
-  }>
-  certificate: Array<string>
-}
 
 const skills = data["skills"]
 
@@ -40,16 +27,11 @@ export default function Home() {
               <h1 className="text-info">William Paddock</h1>
             </Row>
             <Row>
-              <h4 className="text-light">React Developer</h4>
+              <h4 className="text-light">Full Stack Engineer</h4>
             </Row>
             <Row className="justify-content-md-left"> 
-                <Col md="auto">Belgrade, MT </Col>
-                <Col md={1} > - </Col>
-                <Col md="auto"><Phone phone="406-855-1987">406-855-1987</Phone></Col>
-                <Col md={1}> - </Col> 
-                <Col md="auto"><Email email="william.paddock08@gmail.com">me@williampaddock.dev</Email></Col>
-                <Col md={1}> - </Col>
-                <Col md="auto"><a href="https://www.linkedin.com/in/wpaddock08/">linkedin.com/in/wpaddock08</a></Col>
+                <Col md="auto"><a href="https://github.com/retsu8"><FaGithub /></a></Col>
+                <Col md="auto"><a href="https://www.linkedin.com/in/wpaddock08/"><FaLinkedin /></a></Col>
             </Row>
             <br />
             <Row>
@@ -57,7 +39,7 @@ export default function Home() {
             </Row>
             <Row>
               <Col sm={10}>
-Senior Software Engineer with over 6 years of experience in back-end and full-stack development, specializing in scalable API design and microservices. Proven expertise in Node.js, RESTful APIs, and relational databases, with a solid track record in transforming complex requirements into efficient solutions. Demonstrates a strong aptitude for algorithm design, debugging, and collaborative problem-solving in fast-paced environments.
+Senior Software Engineer with over 9 years of experience in back-end and full-stack development, specializing in scalable API design and microservices. Proven expertise in Node.js, RESTful APIs, and relational databases, with a solid track record in transforming complex requirements into efficient solutions. Demonstrates a strong aptitude for algorithm design, debugging, and collaborative problem-solving in fast-paced environments.
               </Col>
               <Col  sm={2}></Col>
             </Row>
@@ -83,8 +65,8 @@ Senior Software Engineer with over 6 years of experience in back-end and full-st
               <hr />
             </Row>
             <Row>
-              <Col><b>Oracle</b></Col>
-              <Col style={{textAlign: "right"}}><b>Dec 2019 - April 2026</b></Col>
+                <Col><b>Oracle</b></Col>
+                <Col style={{textAlign: "right"}}><b>Dec 2019 - April 2026</b></Col>
             </Row>
             <Row>
               <Col>Senior Technical Support Engineer</Col>
@@ -123,42 +105,14 @@ Senior Software Engineer with over 6 years of experience in back-end and full-st
               </Col>
               <Col sm={1}></Col>
             </Row>
-            <Row>
-              <Col>
-                <h2 className="text-info">Education</h2>
-              </Col>
-            </Row>
-            <Row>
-              <hr />
-            </Row>
-            <Row>
-              <Col>Southern New Hamshire University</Col>
-              <Col style={{textAlign: "right"}}>Jan 2024 - Present</Col>
-            </Row>
-            <Row>
-              <Col>
-                Bashelor of Science - BS, Computer Science
-              </Col>
-              <Col>
-                Online
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <b>GPA</b>: 3.89
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <h2 className="text-info">Certifications</h2>
-              </Col>
-            </Row>
-            <Row>
-              <hr />
-            </Row>
-            <Row>
-              <WorkList key="certificates" data={data.certificate} />
-            </Row>
+
+            <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+              © 2026 Copyright: Made with
+              <a className='text-white' href='https://getbootstrap.com/'>BootStrap </a>and 
+              <a className='text-white' href='https://nextjs.org/'>
+               Next.js/React
+              </a>
+            </div>
         </Container>
       </ThemeProvider>
     </>
