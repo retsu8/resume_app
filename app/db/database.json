@@ -1,0 +1,40 @@
+{
+    "work":{
+        "Oracle":[
+            "Resolved defects and troubleshot customized components of the Oracle B2C framework, ensuring seamless performance for integrated Oracle Applications.",
+            "Managed Fusion Service Support and provided database administration for MySQL, reinforcing robust server-side support.",
+            "Facilitated REST and SOAP integration support for external customer sites, improving system responsiveness and overall performance."
+        ],
+        "Vault Innovation Group":[
+            "Collaborated with cross-functional teams to analyze evolving client requirements and design scalable system solutions.",
+            "Developed and maintained a large-scale commercial application with a Django backend and React frontend, emphasizing clean, maintainable code and efficient performance."
+        ],
+        "Frontline Processing":[
+            "Building Node.js/Python-Flask websites for Credit Card Processing",
+            "Python scripting for data crunching",
+            "MYSQL/Mariadb setup/diagnostics replication, data extrapolation",
+            "Amazon EC2/RDS instance setup/maintenance, Node.js application building on EC2 with RDS mysql Backend, Python/Flask",
+            "backend with wsigi service manager",
+            "Working with Saleforce integration and app development.",
+            "Python Unit Testing using stubbing pbp and nose."
+        ]
+    },
+    "skills":[
+        {
+            "type":"Programming & Development",
+            "value":"C++, C#, Erlang, Groovy, Scripting, Full-Stack Development, Computer Science, Software Archi- tecture, TypeScript, Node.js, Algorithm Design, React"
+        },
+        {
+            "type":"Backend, APIs & Databases",
+            "value":"Server Side, REST APIs, Internal & External Clients, Extract, Transform, Load (ETL), Batch Process- ing, Databases, Relational Databases, PostgreSQL, Oracle Cloud, Apache, Domain Name System (DNS), Microservices, Git/GitHub, MongoDB"
+        },
+        {
+            "type":"Testing & Quality Assurance",
+            "value":"Troubleshooting, Problem Solving, Technical Support, Software Lifecycle, Unit Testing, Functional Testing"
+        }
+    ],
+    "certificate": [
+        "Introduction to Terraform",
+        "Oracle Cloud Infrastructure 2023 Certified Foundations Associate"
+    ]
+}
