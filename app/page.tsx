@@ -27,7 +27,7 @@ export type Root<T> = {
   certificate: Array<string>
 }
 
-const skills = Root<skills[]>data["skills"]
+const skills = data["skills"]
 
 export default function Home() {
   return (

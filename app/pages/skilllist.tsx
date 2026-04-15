@@ -1,16 +1,8 @@
-export interface Skill {
-  type: string
-  value: string
-}
-
-interface SkillList {
-  [results]: string
-}
+import {dataType} from "../../types";
 
 export default function SkillList({data}: any) {
-  let results = [];
-  data.forEach((item, index) => {
-    results.push(<li key={item.type}><b>{item.type}</b> - {item.value}</li>)
-    })
-  return (<ul>{results}</ul>);
+  return (<ul>{
+    data.forEach((item: dataType, index: number) => {
+        return(<li key={item.type}><b>{item.type}</b> - {item.value}</li>)
+        })}</ul>);
 }

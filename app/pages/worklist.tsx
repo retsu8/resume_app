@@ -1,9 +1,12 @@
-export default function WorkList({data}: dict) {
-	let results = [];
-	data.forEach((item, index) => {
-	    results.push(
-	      <li key={index}>{item}</li>
-	    );
-	  });
-  return <ul style={{"list-style-type": "disc"}}>{results}</ul>;
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
+
+export default function WorkList({data}: any) {
+	return(
+		<ul className="list-group-numbered">{
+				data.forEach((item: string, index: number) => {
+				    return(
+				      <li className="list-group-item d-flex justify-content-between align-items-start" key={index}>{item}</li>
+				    );
+				  })
+			}</ul>);
 }
